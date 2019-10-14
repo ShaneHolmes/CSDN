@@ -184,6 +184,7 @@ M是实对称矩阵，必可正交化：
 **实验数据：** Columbia Object Image Library-100(COIL-100)图像库。
 该图像库共包括 100 种类别的物体，每个类别中各包含72幅从不同视角拍摄的图像，总共有7200幅。本文共选取8种物体，每种物体包括15 幅图像，总共组成 120 幅图像作检索，并与基于EWT(Edges Weights Threshold)[3]和基于 GED(Graph Edit Distance)[4]的图像描述方法进行对比。实验中，每幅图像共提取45个关键点。本文利用查全率与查准率来说明检索结果[5]，当查全—查准率曲线与坐标轴围成的面积越大，则说明检索性能越好。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019101317443943.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzMjA4ODUx,size_16,color_FFFFFF,t_70#pic_center)
+
 **结果**：
 本文提出了基于KNN的有向复杂网络模型来进行图像形状的识别，并在COIL-100图像库上选取8种物体，共120幅图像进行了检索实验。实验结果，相比于基于EWT和基于GED方法，本文提出的方法查全率与查准率均高于其他方法。
 
